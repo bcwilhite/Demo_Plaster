@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plasterManifest
+  schemaVersion="1.1"
+  templateType="Project" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
+  <metadata>
+    <name>CopyTemplateScripts</name>
+    <id>554cad3d-b9a5-43d7-bde9-53b840d9f7c2</id>
+    <version>0.0.3</version>
+    <title>Foundation Folders, Function/Scripts and Localization Data Files</title>
+    <description>Creates foundation folders, function/scripts and localization data files.</description>
+    <author>Brian Wilhite</author>
+    <tags>Foundation, Folders, Function, Scripts</tags>
+  </metadata>
+
+  <parameters>
+
+  </parameters>
+
+  <content>
+    <!--The file element has four available attributes; source, destination, condition & openInEditor-->
+    <file source='' destination='Classes\' />
+    <file source='' destination='Public\' />
+    <file source='' destination='Private\' />
+    <file source='' destination='Release\' />
+    <file source='' destination='Docs\' />
+    <file source='' destination='Docs\en-US' />
+
+    <!--The templateFile element allows for expansion, and should be used for templates rather than files-->
+    <templateFile source='localizationTemplate.strings.psd1' destination='Docs\en-US\localization.strings.psd1' />
+    <templateFile source='functionTemplate.ps1' destination='Public\Verb-Noun.ps1' />
+    <templateFile source='functionTemplate.ps1' destination='Private\Verb-Noun.ps1' />
+
+  </content>
+</plasterManifest>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plasterManifest
+  schemaVersion="1.1"
+  templateType="Project" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
+  <metadata>
+    <name>CreateFoundationFolders</name>
+    <id>6686cf7a-8418-40d9-99e6-d92bdf38835a</id>
+    <version>0.0.2</version>
+    <title>Creates Foundation Folders</title>
+    <description>Creates foundation folders.</description>
+    <author>Brian Wilhite</author>
+    <tags>Foundation, Folders</tags>
+  </metadata>
+
+  <parameters>
+    <!--
+      PLASTER_TemplatePath - The absolute path to the template directory.
+      PLASTER_DestinationPath - The absolute path to the destination directory.
+      PLASTER_DestinationName - The name of the destinaion directory.
+      PLASTER_FileContent - The contents of a file be modified via the <modify> directive.
+      PLASTER_DirSepChar - The directory separator char for the platform.
+      PLASTER_HostName - The PowerShell host name e.g. $Host.Name
+      PLASTER_Version - The version of the Plaster module invoking the template.
+      PLASTER_Guid1 - Randomly generated GUID value
+      PLASTER_Guid2 - Randomly generated GUID value
+      PLASTER_Guid3 - Randomly generated GUID value
+      PLASTER_Guid4 - Randomly generated GUID value
+      PLASTER_Guid5 - Randomly generated GUID value
+      PLASTER_Date - Date in short date string format e.g. 10/31/2016
+      PLASTER_Time - Time in short time string format e.g. 5:11 PM
+      PLASTER_Year - The four digit year
+    -->
+  </parameters>
+
+  <content>
+    <!--The file element has four available attributes; source, destination, condition & openInEditor-->
+    <file source='' destination='Classes\' />
+    <file source='' destination='Public\' />
+    <file source='' destination='Private\' />
+    <file source='' destination='Release\' />
+    <file source='' destination='Docs\' />
+    <file source='' destination='Docs\en-US' />
+
+  </content>
+</plasterManifest>

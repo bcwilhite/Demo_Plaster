@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plasterManifest
+  schemaVersion="1.1"
+  templateType="Project" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
+  <metadata>
+    <name>TemplateExpansion</name>
+    <id>967a2c04-67b0-4b9a-a60a-d03f939705a9</id>
+    <version>0.0.7</version>
+    <title>All Of The Above, Plus Module Disclaimer Text (Prompt)</title>
+    <description>Incorporates plaster manifests one through six, prompts the user for Disclaimer text (Yes/No).</description>
+    <author>Brian Wilhite</author>
+    <tags>AllOfTheAbove, NewModuleManifest, Prompts</tags>
+  </metadata>
+
+  <parameters>
+    <!--The parameter element has five possible attributes; name, type, default, condition and store-->
+    <parameter name='ModuleName' type='text' prompt='Name of your module' default='$PLASTER_DestinationName'/>
+    <parameter name='ModuleDesc' type='text' prompt='Brief description of this module' default='TO BE DEFINED' />
+    <parameter name='ModuleVersion' type='text' prompt='Version number' default='0.0.0.1' />
+    <parameter name='ModuleAuthor' type='user-fullname' prompt='Author' store='text' />
+    <parameter name='CompanyName' type='text' prompt='Company Name' store='encrypted' />
+
+    <!--The type attribute has five possible values; text, choice, multichoice, user-fullname, user-email-->
+    <parameter name='LocalizationTemplate' type='choice' prompt='Include localization folder and template?' default='0'>
+      <choice label='&amp;Yes' help='Includes localization folder and templates' value='Yes' />
+      <choice label='&amp;No' help='Does not include localization folder and templates' value='No' />
+    </parameter>
+
+    <parameter name='FunctionTemplate' type='choice' prompt='Include Public/Private function templates?' default='0'>
+      <choice label='&amp;Yes' help='Includes function templates' value='Yes' />
+      <choice label='&amp;No' help='Does not include function templates' value='No' />
+    </parameter>
+
+    <parameter name='Disclaimer' type='choice' prompt='Insert Disclaimer Text?' default='0'>
+      <choice label='&amp;Yes' help='Add disclaimer to module .psm1' value='Yes' />
+      <choice label='&amp;No' help='Does not add a disclaimer module .psm1' value='No' />
+    </parameter>
+
+    <parameter name='ReadMeMd' type='choice' prompt='Include module README.md?' default='0'>
+      <choice label='&amp;Yes' help='Add README.md to the Docs folder' value='Yes' />
+      <choice label='&amp;No' help='Does not add README.md to the Docs folder' value='No' />
+    </parameter>
+
+  </parameters>
+
+  <content>
+    <!--The newModuleManifest element has 12 possible attributes, the eight included below, followed by; condition, powerShellVersion, nestedModules, dscResourcesToExport-->
+    <newModuleManifest destination='${PLASTER_PARAM_ModuleName}.psd1'
+          moduleVersion='$PLASTER_PARAM_ModuleVersion'
+          rootModule='${PLASTER_PARAM_ModuleName}.psm1'
+          author='$PLASTER_PARAM_ModuleAuthor'
+          description='$PLASTER_PARAM_ModuleDesc'
+          companyName='$PLASTER_PARAM_CompanyName'
+          encoding='UTF8-NoBOM'
+          openInEditor='true' />
+
+    <!--The file element has four available attributes; source, destination, condition & openInEditor-->
+    <file source='' destination='Classes\' />
+    <file source='' destination='Public\' />
+    <file source='' destination='Private\' />
+    <file source='' destination='Release\' />
+    <file source='' destination='Docs\' />
+
+    <!--The templateFile element allows for template expansion, and should be used for templates rather than the 'file' element-->
+    <templateFile condition='$PLASTER_PARAM_LocalizationTemplate -eq "Yes"' source='localizationTemplate.strings.psd1' destination='Docs\en-US\${PLASTER_PARAM_ModuleName}.strings.psd1' />
+    <templateFile condition='$PLASTER_PARAM_FunctionTemplate -eq "Yes"' source='functionTemplate.ps1' destination='Public\Verb-Noun.ps1' />
+    <templateFile condition='$PLASTER_PARAM_FunctionTemplate -eq "Yes"' source='functionTemplate.ps1' destination='Private\Verb-Noun.ps1' />
+
+    <templateFile source='moduleTemplate.psm1' destination='${PLASTER_PARAM_ModuleName}.psm1' />
+    <templateFile condition='$PLASTER_PARAM_ReadMeMd -eq "Yes"' source='readMeTemplate.md' destination='Docs\en-US\README.md' />
+
+  </content>
+</plasterManifest>
