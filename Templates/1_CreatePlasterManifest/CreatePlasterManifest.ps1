@@ -4,7 +4,7 @@ $newPlasterManifestParams = @{
     TemplateType    = 'Project'
     TemplateVersion = '0.0.1'
     Title           = 'Foundation Manifest'
-    Description     = 'Creates a very, currently, useless plasterManifest.xml.'
+    Description     = 'Creates a, currently very useless, plasterManifest.xml.'
     Tags            = 'Foundation'
     Author          = 'Brian Wilhite'
 }
