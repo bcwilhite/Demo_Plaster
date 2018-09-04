@@ -34,8 +34,7 @@
           author='Brian Wilhite'
           description='My new module manifest'
           companyName='Microsoft'
-          encoding='UTF8-NoBOM'
-          openInEditor='true' />
+          encoding='UTF8-NoBOM' />
 
     <!--The file element has four available attributes; source, destination, condition & openInEditor-->
     <file source='' destination='Classes\' />

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plasterManifest
+  schemaVersion="1.1"
+  templateType="Project" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
+  <metadata>
+    <name>FoundationManifest</name>
+    <id>9c6b6edf-5c3e-4f17-95dc-ef59c64c20db</id>
+    <version>0.0.1</version>
+    <title>Foundation Manifest</title>
+    <description>Creates a minimal plasterManifest.xml.</description>
+    <author>Brian Wilhite</author>
+    <tags>Foundation</tags>
+  </metadata>
+  <parameters></parameters>
+  <content></content>
+</plasterManifest>

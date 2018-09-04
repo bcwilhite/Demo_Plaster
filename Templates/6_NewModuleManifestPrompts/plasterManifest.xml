@@ -41,8 +41,7 @@
           author='$PLASTER_PARAM_ModuleAuthor'
           description='$PLASTER_PARAM_ModuleDesc'
           companyName='$PLASTER_PARAM_CompanyName'
-          encoding='UTF8-NoBOM'
-          openInEditor='true' />
+          encoding='UTF8-NoBOM' />
 
     <!--The file element has four available attributes; source, destination, condition & openInEditor-->
     <file source='' destination='Classes\' />

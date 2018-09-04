@@ -52,8 +52,7 @@
           author='$PLASTER_PARAM_ModuleAuthor'
           description='$PLASTER_PARAM_ModuleDesc'
           companyName='$PLASTER_PARAM_CompanyName'
-          encoding='UTF8-NoBOM'
-          openInEditor='true' />
+          encoding='UTF8-NoBOM' />
 
     <message>&#10;&#10;Creating folders for module: $PLASTER_PARAM_ModuleName</message>
     <!--The file element has four available attributes; source, destination, condition & openInEditor-->
@@ -77,7 +76,6 @@
 
     <message condition='$PLASTER_PARAM_ReadMeMd -eq "Yes"'>&#10;&#10;Adding README.md to Docs\en-US folder</message>
     <templateFile condition='$PLASTER_PARAM_ReadMeMd -eq "Yes"' source='readMeTemplate.md' destination='Docs\en-US\README.md' />
-    <message>
     <message>&#10;&#10;Your new PowerShell module project '$PLASTER_PARAM_ModuleName' has been created.</message>
 
   </content>
