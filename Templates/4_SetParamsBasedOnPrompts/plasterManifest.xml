@@ -3,7 +3,7 @@
   schemaVersion="1.1"
   templateType="Project" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
   <metadata>
-    <name>SetParamsBasedOnPrompts</name>
+    <name>Demo_SetParamsBasedOnPrompts</name>
     <id>e3784c54-d5e1-40fe-b48b-2d9bec19478e</id>
     <version>0.0.4</version>
     <title>Foundation Folders, Function/Scripts and Localization Data Files with Choice Prompts</title>

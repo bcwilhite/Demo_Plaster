@@ -3,7 +3,7 @@
   schemaVersion="1.1"
   templateType="Project" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
   <metadata>
-    <name>CopyTemplateScripts</name>
+    <name>Demo_CopyTemplateScripts</name>
     <id>554cad3d-b9a5-43d7-bde9-53b840d9f7c2</id>
     <version>0.0.3</version>
     <title>Foundation Folders, Function/Scripts and Localization Data Files</title>

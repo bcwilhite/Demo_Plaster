@@ -3,7 +3,7 @@
   schemaVersion="1.1"
   templateType="Project" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
   <metadata>
-    <name>NewModuleManifestPrompts</name>
+    <name>Demo_NewModuleManifestPrompts</name>
     <id>8e6c3c12-b483-457e-82cb-49170d13b6ec</id>
     <version>0.0.6</version>
     <title>All Of The Above, Plus A New Module Manifest (Prompts)</title>

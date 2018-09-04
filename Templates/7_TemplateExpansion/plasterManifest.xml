@@ -3,7 +3,7 @@
   schemaVersion="1.1"
   templateType="Project" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
   <metadata>
-    <name>TemplateExpansion</name>
+    <name>Demo_TemplateExpansion</name>
     <id>967a2c04-67b0-4b9a-a60a-d03f939705a9</id>
     <version>0.0.7</version>
     <title>All Of The Above, Plus Module Disclaimer Text (Prompt)</title>

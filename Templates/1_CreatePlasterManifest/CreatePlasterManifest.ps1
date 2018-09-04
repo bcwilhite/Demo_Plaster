@@ -1,6 +1,6 @@
 $newPlasterManifestParams = @{
     Path            = '.\Templates\1_CreatePlasterManifest\plasterManifest.xml'
-    TemplateName    = 'FoundationManifest'
+    TemplateName    = 'Demo_FoundationManifest'
     TemplateType    = 'Project'
     TemplateVersion = '0.0.1'
     Title           = 'Foundation Manifest'

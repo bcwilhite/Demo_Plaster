@@ -4,7 +4,7 @@
   templateType='Project' xmlns='http://www.microsoft.com/schemas/PowerShell/Plaster/v1'>
 
   <metadata>
-    <name>PuttingItAllTogether</name>
+    <name>Demo_PuttingItAllTogether</name>
     <id>ad13f453-1042-41d1-9c6d-02752884be7a</id>
     <version>0.9.0</version>
     <title>Complete Module Scaffolding Template</title>

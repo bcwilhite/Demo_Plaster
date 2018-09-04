@@ -3,7 +3,7 @@
   schemaVersion="1.1"
   templateType="Project" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
   <metadata>
-    <name>CreateFoundationFolders</name>
+    <name>Demo_CreateFoundationFolders</name>
     <id>6686cf7a-8418-40d9-99e6-d92bdf38835a</id>
     <version>0.0.2</version>
     <title>Creates Foundation Folders</title>

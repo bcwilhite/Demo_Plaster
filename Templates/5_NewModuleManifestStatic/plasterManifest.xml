@@ -3,7 +3,7 @@
   schemaVersion="1.1"
   templateType="Project" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
   <metadata>
-    <name>NewModuleManifestStatic</name>
+    <name>Demo_NewModuleManifestStatic</name>
     <id>7af11da2-e9d1-4369-a5ab-fd7335354073</id>
     <version>0.0.5</version>
     <title>All Of The Above, Plus A New Module Manifest (Static)</title>
