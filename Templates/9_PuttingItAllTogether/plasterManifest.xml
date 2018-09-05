@@ -16,7 +16,7 @@
   <parameters>
     <parameter name='ModuleName' type='text' prompt='Name of your module' default='$PLASTER_DestinationName'/>
     <parameter name='ModuleDesc' type='text' prompt='Brief description of this module' default='TO BE DEFINED' />
-    <parameter name='ModuleVersion' type='text' prompt='Version number' default='0.0.0.1' />
+    <parameter name='ModuleVersion' type='text' prompt='Version number' default='0.4.0' />
     <parameter name='ModuleAuthor' type='user-fullname' prompt='Author' store='text' />
     <parameter name='CompanyName' type='text' prompt='Company Name' store='text' />
 
